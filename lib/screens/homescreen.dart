@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xff72503c),
+        backgroundColor: const Color(0xff72503c),
         title: const Text('SlideTech'),
         actions: <Widget>[
           Padding(
@@ -34,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: ElevatedButton.icon(
               onPressed: () async {
                 await AuthController().logOut();
-                Navigator.pushReplacement(context,
+               Navigator.pushReplacement(context,
                     MaterialPageRoute(builder: (context) => LoginScreen()));
               },
               icon: const Icon(Icons.logout),
