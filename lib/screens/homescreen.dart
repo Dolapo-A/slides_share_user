@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:slides_share_user/controllers/authController.dart';
+import 'package:slides_share_user/screens/initialHomeScreen.dart';
 import 'package:slides_share_user/screens/loginScreen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -50,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const LoginScreen()));
+                        builder: (context) => const InitialHomeScreen()));
               },
               icon: const Icon(
                 Icons.logout,

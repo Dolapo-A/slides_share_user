@@ -72,7 +72,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           )),
           child: Padding(
             padding:
-                const EdgeInsets.only(left: 8, bottom: 16, right: 8, top: 16),
+                const EdgeInsets.only(left: 12, bottom: 8, right: 12, top: 8),
             child: Center(
               child: Container(
                 decoration: BoxDecoration(
@@ -106,41 +106,46 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   // fullname
                                   TextFormField(
                                     controller: _indexNumberController,
-                                    textCapitalization: TextCapitalization.words,
+                                    textCapitalization:
+                                        TextCapitalization.words,
                                     keyboardType: TextInputType.name,
                                     style: const TextStyle(
                                         color: Colors.black, fontSize: 14),
                                     decoration: InputDecoration(
                                       labelText: "Index number",
                                       isDense: true,
-                                      contentPadding: const EdgeInsets.symmetric(
+                                      contentPadding:
+                                          const EdgeInsets.symmetric(
                                         horizontal: 10,
                                         vertical: 15,
                                       ),
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide:
-                                            const BorderSide(color: Colors.grey),
+                                        borderSide: const BorderSide(
+                                            color: Colors.grey),
                                         borderRadius: BorderRadius.circular(5),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: const BorderSide(width: 2),
-                                        borderRadius: BorderRadius.circular(5.0),
+                                        borderSide: const BorderSide(width: 1),
+                                        borderRadius:
+                                            BorderRadius.circular(5.0),
                                       ),
                                       labelStyle: const TextStyle(
                                         color: Colors.grey,
                                         fontSize: 14,
                                       ),
-                    
+
                                       //for the errors
                                       errorBorder: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(5.0),
+                                        borderRadius:
+                                            BorderRadius.circular(5.0),
                                         borderSide: const BorderSide(
                                           color: Colors.red,
                                           width: 2.0,
                                         ),
                                       ),
                                       border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(5.0),
+                                        borderRadius:
+                                            BorderRadius.circular(5.0),
                                       ),
                                     ),
                                     validator: (value) {
@@ -164,34 +169,38 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                     decoration: InputDecoration(
                                       labelText: "Email",
                                       isDense: true,
-                                      contentPadding: const EdgeInsets.symmetric(
+                                      contentPadding:
+                                          const EdgeInsets.symmetric(
                                         horizontal: 10,
                                         vertical: 15,
                                       ),
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide:
-                                            const BorderSide(color: Colors.grey),
+                                        borderSide: const BorderSide(
+                                            color: Colors.grey),
                                         borderRadius: BorderRadius.circular(5),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: const BorderSide(width: 2),
-                                        borderRadius: BorderRadius.circular(5.0),
+                                        borderSide: const BorderSide(width: 1),
+                                        borderRadius:
+                                            BorderRadius.circular(5.0),
                                       ),
                                       labelStyle: const TextStyle(
                                         color: Colors.grey,
                                         fontSize: 14,
                                       ),
-                    
+
                                       //for the errors
                                       errorBorder: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(5.0),
+                                        borderRadius:
+                                            BorderRadius.circular(5.0),
                                         borderSide: const BorderSide(
                                           color: Colors.red,
                                           width: 2.0,
                                         ),
                                       ),
                                       border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(5.0),
+                                        borderRadius:
+                                            BorderRadius.circular(5.0),
                                       ),
                                     ),
                                     validator: (value) =>
@@ -244,41 +253,45 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                       ),
                                       labelText: "Password",
                                       isDense: true,
-                                      contentPadding: const EdgeInsets.symmetric(
+                                      contentPadding:
+                                          const EdgeInsets.symmetric(
                                         horizontal: 10,
                                         vertical: 5,
                                       ),
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide:
-                                            const BorderSide(color: Colors.grey),
+                                        borderSide: const BorderSide(
+                                            color: Colors.grey),
                                         borderRadius: BorderRadius.circular(5),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: const BorderSide(width: 2),
-                                        borderRadius: BorderRadius.circular(5.0),
+                                        borderSide: const BorderSide(width: 1),
+                                        borderRadius:
+                                            BorderRadius.circular(5.0),
                                       ),
                                       labelStyle: const TextStyle(
                                         color: Colors.grey,
                                         fontSize: 14,
                                       ),
-                    
+
                                       //for the errors
                                       errorBorder: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(5.0),
+                                        borderRadius:
+                                            BorderRadius.circular(5.0),
                                         borderSide: const BorderSide(
                                           color: Colors.red,
                                           width: 2.0,
                                         ),
                                       ),
                                       border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(5.0),
+                                        borderRadius:
+                                            BorderRadius.circular(5.0),
                                       ),
                                     ),
                                   ),
                                   const SizedBox(
                                     height: 15,
                                   ),
-                    
+
                                   TextFormField(
                                     controller: _confirmpasswordTextController,
                                     keyboardType: TextInputType.text,
@@ -288,34 +301,38 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                     decoration: InputDecoration(
                                       labelText: "Confirm Password",
                                       isDense: true,
-                                      contentPadding: const EdgeInsets.symmetric(
+                                      contentPadding:
+                                          const EdgeInsets.symmetric(
                                         horizontal: 10,
                                         vertical: 15,
                                       ),
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide:
-                                            const BorderSide(color: Colors.grey),
+                                        borderSide: const BorderSide(
+                                            color: Colors.grey),
                                         borderRadius: BorderRadius.circular(5),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: const BorderSide(width: 2),
-                                        borderRadius: BorderRadius.circular(5.0),
+                                        borderSide: const BorderSide(width: 1),
+                                        borderRadius:
+                                            BorderRadius.circular(5.0),
                                       ),
                                       labelStyle: const TextStyle(
                                         color: Colors.grey,
                                         fontSize: 14,
                                       ),
-                    
+
                                       //for the error message
                                       errorBorder: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(5.0),
+                                        borderRadius:
+                                            BorderRadius.circular(5.0),
                                         borderSide: const BorderSide(
                                           color: Colors.red,
                                           width: 2.0,
                                         ),
                                       ),
                                       border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(5.0),
+                                        borderRadius:
+                                            BorderRadius.circular(5.0),
                                       ),
                                     ),
                                     validator: FieldValidator.equalTo(
@@ -382,7 +399,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                         recognizer: TapGestureRecognizer()
                                           ..onTap = () => Navigator.of(context)
                                                   .push(PageRouteBuilder(
-                                                pageBuilder: (context, animation,
+                                                pageBuilder: (context,
+                                                        animation,
                                                         secondaryAnimation) =>
                                                     const LoginScreen(),
                                               ))),
