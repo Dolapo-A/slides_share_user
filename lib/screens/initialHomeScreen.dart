@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:slides_share_user/screens/loginScreen.dart';
@@ -21,11 +22,7 @@ class _InitialHomeScreenState extends State<InitialHomeScreen> {
         screenWidth * 0.02; // You can adjust the multiplier as needed
     double textSizeTitle =
         screenWidth * 0.15; // You can adjust the multiplier as needed
-    double buttonSize =
-        screenWidth * 0.14; // You can adjust the multiplier as needed
-    double buttonTextSize =
-        screenWidth * 0.009; // You can adjust the multiplier as needed
-
+   
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -52,7 +49,7 @@ class _InitialHomeScreenState extends State<InitialHomeScreen> {
                 },
                 child: const Text(
                   'Login',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white, fontSize: 12),
                 )),
           ),
         ],
@@ -97,7 +94,7 @@ class _InitialHomeScreenState extends State<InitialHomeScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
-                        width: buttonSize,
+                        width: 100,
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                                 primary: Color(0xff003c7b)),
@@ -108,19 +105,18 @@ class _InitialHomeScreenState extends State<InitialHomeScreen> {
                                     builder: (context) => const SignUpScreen()),
                               );
                             },
-                            child: Text(
+                            child: const Text(
                               'Sign up',
                               textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: buttonTextSize),
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 12),
                             )),
                       ),
                       const SizedBox(
                         width: 10,
                       ),
                       Container(
-                        width: buttonSize,
+                        width: 100,
                         child: ElevatedButton(
                             style:
                                 ElevatedButton.styleFrom(primary: Colors.white),
@@ -169,12 +165,11 @@ class _InitialHomeScreenState extends State<InitialHomeScreen> {
                                 },
                               );
                             },
-                            child: Text(
+                            child: const Text(
                               'About Us',
                               textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: buttonTextSize),
+                              style:
+                                  TextStyle(color: Colors.black, fontSize: 12),
                             )),
                       ),
                     ],
