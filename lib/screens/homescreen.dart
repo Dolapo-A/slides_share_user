@@ -30,6 +30,14 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xff72503c),
+        elevation: 0,
+        bottom: PreferredSize(
+          preferredSize: Size.fromHeight(0), // Add a bottom stroke
+          child: Container(
+            height: 1,
+            color: Colors.grey[350], // Color of the bottom stroke
+          ),
+        ),
         title: const Text('SlideTech'),
         centerTitle: true,
         actions: <Widget>[
