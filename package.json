@@ -12,5 +12,8 @@
 		"build": "flutter build web"
 	},
 	"author": "",
-	"license": "ISC"
+	"license": "ISC",
+	"dependencies": {
+		"ci": "^2.3.0"
+	}
 }
