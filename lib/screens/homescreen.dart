@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_processing/flutter_processing.dart';
 import 'package:gap/gap.dart';
 import 'package:slides_share_user/controllers/authController.dart';
 import 'package:slides_share_user/screens/initialHomeScreen.dart';
@@ -264,6 +265,17 @@ class _HomeScreenState extends State<HomeScreen> {
                                     ),
                                   ),
                                 )
+                              // Container(
+                              //     // height: MediaQuery.of(context).size.height,
+                              //     // width: MediaQuery.of(context).size.width,
+                              //     // decoration: BoxDecoration(
+                              //     //     borderRadius: BorderRadius.circular(8),
+                              //     //     color: Colors.white),
+                              //     child: Processing(sketch: Sketch.simple(
+                              //       setup: (s) async{
+
+                              //       }
+                              //     )))
                               : StreamBuilder<QuerySnapshot>(
                                   stream: FirebaseFirestore.instance
                                       .collection('files')
@@ -287,7 +299,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           children: [
                                             Icon(
                                               Icons.file_copy,
-                                              size: 80,
+                                              size: 40,
                                               color: Colors.grey,
                                             ),
                                             Gap(12),
