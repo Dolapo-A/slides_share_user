@@ -48,10 +48,18 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            icon: Icon(
+              Icons.arrow_back,
+              color: Colors.white,
+            )),
         backgroundColor: Color(0xff72503c),
         title: Text(
           'SlideTech Login Page',
-          style: TextStyle(fontWeight: FontWeight.normal),
+          style: TextStyle(fontWeight: FontWeight.normal, color: Colors.white),
         ),
         centerTitle: true,
       ),

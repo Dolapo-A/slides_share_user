@@ -19,7 +19,7 @@ void main() async {
           messagingSenderId: "348273033224",
           appId: "1:348273033224:web:436a08c3bd048bdbecd1bd"));
 
-            MobileAds.instance.initialize();
+  MobileAds.instance.initialize();
 
   runApp(const MainApp());
 }

@@ -45,11 +45,19 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+            leading: IconButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                icon: const Icon(
+                  Icons.arrow_back,
+                  color: Colors.white,
+                )),
             backgroundColor: const Color(0xff72503c),
             centerTitle: true,
             title: const Text(
               'Change Password',
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 20, color: Colors.white),
             )),
         body: Container(
           decoration: const BoxDecoration(
@@ -73,7 +81,8 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     height: 190,
                     width: 300,
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.only(
+                          top: 8.0, right: 12, bottom: 8.0, left: 12.0),
                       child: Form(
                         key: _formkey,
                         child: Column(
@@ -93,7 +102,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                                 controller: _emailController,
                                 keyboardType: TextInputType.emailAddress,
                                 style: const TextStyle(
-                                    color: Colors.black, fontSize: 18),
+                                    color: Colors.black, fontSize: 14),
                                 decoration: InputDecoration(
                                   labelText: "Email",
                                   isDense: true,
