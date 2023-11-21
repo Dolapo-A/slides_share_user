@@ -1,11 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_processing/flutter_processing.dart';
 import 'package:gap/gap.dart';
 import 'package:slides_share_user/controllers/authController.dart';
 import 'package:slides_share_user/screens/initialHomeScreen.dart';
-import 'package:slides_share_user/screens/loginScreen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -40,7 +38,10 @@ class _HomeScreenState extends State<HomeScreen> {
             color: Colors.grey[350], // Color of the bottom stroke
           ),
         ),
-        title: const Text('SlideTech'),
+        title: const Text(
+          'SlideTech',
+          style: TextStyle(color: Colors.white),
+        ),
         centerTitle: true,
         actions: <Widget>[
           Padding(
@@ -56,11 +57,12 @@ class _HomeScreenState extends State<HomeScreen> {
               },
               icon: const Icon(
                 Icons.logout,
+                color: Colors.white,
                 size: 20,
               ),
               label: const Text(
                 'Sign Out',
-                style: TextStyle(fontSize: 12),
+                style: TextStyle(fontSize: 12, color: Colors.white),
               ),
               style: ElevatedButton.styleFrom(
                 // fixedSize: const Size(120, 70),
@@ -77,7 +79,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   !isRowOpen; // Toggle the value to open/close the drawer
             });
           },
-          icon: Icon(isRowOpen ? Icons.close_rounded : Icons.menu_rounded),
+          icon: Icon(
+            isRowOpen ? Icons.close_rounded : Icons.menu_rounded,
+            color: Colors.white,
+          ),
         ),
       ),
       body: LayoutBuilder(builder: (context, constraints) {

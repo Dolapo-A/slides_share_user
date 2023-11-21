@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:slides_share_user/screens/loginScreen.dart';
@@ -22,7 +21,7 @@ class _InitialHomeScreenState extends State<InitialHomeScreen> {
         screenWidth * 0.02; // You can adjust the multiplier as needed
     double textSizeTitle =
         screenWidth * 0.15; // You can adjust the multiplier as needed
-   
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -116,7 +115,7 @@ class _InitialHomeScreenState extends State<InitialHomeScreen> {
                         width: 10,
                       ),
                       Container(
-                        width: 100,
+                        width: 110,
                         child: ElevatedButton(
                             style:
                                 ElevatedButton.styleFrom(primary: Colors.white),
